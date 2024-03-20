@@ -1,0 +1,23 @@
+#Setting{
+	.tabs
+	{
+		.ant-tabs-nav-wrap{
+			padding: 10px 40px 10px 40px;
+			border-radius: 5px;
+			background-color: #fff;
+			box-shadow: $shadow;
+		}
+		.ant-tabs-nav{
+			height: max-content;
+		}
+	}
+	#ConfigOrder{
+		.setting-btn{
+			margin-top: 20px;
+			
+		}
+	}	
+}
+.dark-mode #Setting .tabs .ant-tabs-nav-wrap{
+	background: $bg-dark!important;
+}

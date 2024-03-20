@@ -1,0 +1,60 @@
+import {User, UserRole} from "@/@types/user.type.ts";
+
+export type Noti = BaseEntity & {
+	user?: User;
+	userName?: string;
+	fullName?: string;
+	role: UserRole;
+	action: EventNoti;
+	data: Array<Record<string,any>>;
+	isRead: boolean;
+}
+
+export type NotiData = {
+	data: Record<UserRole, Noti[]>
+	numUnread: Record<UserRole, number>
+}
+export enum EventNoti {
+	PRODUCT_CREATE = 'PRODUCT.CREATE',
+	PRODUCT_UPDATE = 'PRODUCT.UPDATE',
+	PRODUCT_DELETE = 'PRODUCT.DELETE',
+	// ORDER
+	ORDER_NEW = 'ORDER.NEW', // ĐƠN HÀNG MỚI
+	ORDER_UPDATE = 'ORDER.UPDATE', // CẬP NHẬT ĐƠN HÀNG
+	ORDER_CANCEL = 'ORDER.CANCEL', // HỦY ĐƠN HÀNG
+	ORDER_CONFIRM = 'ORDER.CONFIRM', // XÁC NHẬN ĐƠN HÀNG
+	ORDER_DELIVERY = 'ORDER.DELIVERY', // GIAO HÀNG
+	ORDER_RETURN = 'ORDER.RETURN', // TRẢ HÀNG
+	ORDER_COMPLETE = 'ORDER.COMPLETE', // HOÀN THÀNH ĐƠN HÀNG
+    ORDER_REFUND_TO_SALE = 'ORDER.REFUND_TO_SALE', // Hoàn đơn về sale
+	ORDER_RETURN_CONFIRM = 'ORDER.RETURN_CONFIRM', // Hoàn đơn về kho
+	ORDER_DELIVERY_FAILED = 'ORDER.DELIVERY_FAILED', // Giao hàng thất bại
+	//BILL OF LADING
+	PRODUCT_SOLD_OUT = 'PRODUCT.SOLD_OUT', // HẾT HÀNG
+	PRODUCT_IN_STOCK = 'PRODUCT.IN_STOCK', // CÓ HÀNG
+	PRODUCT_IMPORT = 'PRODUCT.IMPORT',// NHẬP HÀNG
+
+	// SKU
+	SKU_CREATE = 'SKU.CREATE',
+	SKU_UPDATE = 'SKU.UPDATE',
+	SKU_DELETE = 'SKU.DELETE',
+	// CATEGORY
+	CATEGORY_CREATE = 'CATEGORY.CREATE',
+	CATEGORY_UPDATE = 'CATEGORY.UPDATE',
+	CATEGORY_DELETE = 'CATEGORY.DELETE',
+	//unit 
+	UNIT_CREATE = 'UNIT.CREATE',
+	UNIT_UPDATE = 'UNIT.UPDATE',
+	UNIT_DELETE = 'UNIT.DELETE',
+
+	// nhà cung cấp
+	SUPPLIER_CREATE = 'SUPPLIER.CREATE',
+	SUPPLIER_UPDATE = 'SUPPLIER.UPDATE',
+	SUPPLIER_DELETE = 'SUPPLIER.DELETE',
+
+	// user 
+    USER_UPDATE = 'USER.UPDATE',
+    USER_RESET_PASSWORD = 'USER.RESET_PASSWORD',
+    USER_LOCK = 'USER.LOCK',
+
+}

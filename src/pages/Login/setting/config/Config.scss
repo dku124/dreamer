@@ -1,0 +1,10 @@
+#Config{
+	padding: 10px 30px;
+	background: $bg-light;
+	border-radius: $radius;
+	box-shadow: $shadow;
+}
+
+.dark-mode #Config{
+	background: $bg-dark!important;
+}

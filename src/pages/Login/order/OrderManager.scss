@@ -1,0 +1,16 @@
+#OrderManager
+{
+    .body-control
+    {
+      .tabs{
+        background: $bg-light;
+        padding: 5px 10px;
+        border-radius: $radius;
+        box-shadow: $shadow;
+		margin-bottom: 10px;
+      }
+    }
+}
+.dark-mode .body-control .tabs{
+	background: $bg-dark!important;
+}

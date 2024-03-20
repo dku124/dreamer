@@ -1,0 +1,66 @@
+@import "variables";
+@import "utils";
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+	
+}
+
+.w100{
+  width: 100%!important;
+}
+
+.ant-dropdown.antd-pro-header-dropdown-container.antd-pro-notice-icon-popover.ant-dropdown-placement-bottomRight .ant-spin-nested-loading{
+	padding: 10px;
+}
+//.antd-pro-notice-icon-popover{
+//	min-width: max-content!important;
+//}
+.antd-pro-notice-icon-description{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-webkit-line-clamp: 2; /* Số dòng tối đa */
+	max-height: 3.5em; /* Chiều cao tối đa của 2 dòng và nửa dòng thứ 3 */
+	text-overflow: ellipsis;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	background-color: #eee;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+body::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+	border-radius: 50px;
+}
+
+#shipChart{
+	width: 340px!important;
+	height:340px!important;
+}
+.hidden{
+	display: none!important;
+}
+
+.ant-btn
+{
+	line-height: normal;
+}

@@ -1,0 +1,41 @@
+#authLayout{
+	min-height: 100vh;
+	#layoutHeader{
+		background: $bg-base-light;
+	}
+	#layoutContent{
+		background: $bg-base-light;
+		min-height: max-content;
+	}
+	#layoutFooter{
+		background: $bg-base-light;
+	}
+}
+.dark-mode #layoutContent{
+	background: $bg-base-dark!important;
+}
+#DefaultLayout{
+	min-height: 100vh;
+	.main-menu-header{
+		display: flex;
+		justify-content: space-between;
+		.content-title{
+			margin: 12px;
+		}
+	}
+	.main-content-body{
+		margin: 0 16px 16px 16px;
+		padding: 10px;
+		border-radius: $radius;
+	}
+	.main-breadcrumb{
+		margin: 10px 16px;
+	}
+	.main-header{
+		background: $bg-light;
+	}
+	
+}
+.dark-mode .main-header{
+	background: $bg-dark!important;
+}

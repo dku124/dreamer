@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+.center{
+	text-align: center;
+}
+
+.header-control{
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background: $bg-light;
+	border-radius: $radius;
+	box-shadow: $shadow;
+	.btn{
+		margin: 0 10px;
+	}
+	.input-search{
+		width: 400px;
+	}
+}
+
+.dark-mode .header-control{
+	background: $bg-dark;
+}
+
+.w100{
+	width: 100%;
+}
+
+.shadow{
+	box-shadow: $shadow;
+}
+
+.border-radius{
+	border-radius: $radius;
+}
+
+.chart-order-byProvince{
+	background: $bg-light;
+	border-radius: $radius;
+	box-shadow: $shadow;
+	padding: $padding;
+}
+
+.dark-mode .chart-order-byProvince{
+	background: $bg-dark!important;
+}
+.labelList{
+	
+	width: 100%;
+	background: $bg-light;
+	&-item{
+		margin-right: 10px;
+	}
+}
+.dark-mode .labelList{
+	background: $bg-dark;
+}
+
+.antd-pro-notice-icon-noticeButton{
+	height: 45px;
+}
+.chart-order{
+	height: 100%;
+}
+
+.customBlock{
+	border-radius: $radius;
+	box-shadow: $shadow;
+	padding: $padding;
+	height: 100%;
+}

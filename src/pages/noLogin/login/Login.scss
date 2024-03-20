@@ -1,0 +1,44 @@
+@import "@styles/variables.scss";
+
+
+
+
+
+#PageLogin{
+	@media (max-width: 767px) {
+		padding: 15px;
+		margin: 25vh 15px;
+		min-width: 350px;
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+		margin: 30vh 15px;
+		min-width: 720px;
+	}
+	@media (min-width: 1024px) {
+		margin: 15px auto;
+		width: 480px;
+	}
+	background: $bg-light;
+	padding: $padding;
+	border-radius: $radius;
+	.title-form{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+}
+.dark-mode #PageLogin{
+	background: $bg-dark;
+}
+
+/* pc */
+@media (min-width: 1024px) {
+
+}
+
+/* tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+}
+
+/* phone */
+

@@ -1,0 +1,14 @@
+#UserManager{
+	
+	.body-main{
+		background: $bg-light;
+		border-radius: $radius;
+		box-shadow: $shadow;
+
+	}
+	
+	
+}
+.dark-mode .body-main{
+	background: $bg-dark!important;
+}
